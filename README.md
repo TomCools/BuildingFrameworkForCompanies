@@ -9,5 +9,5 @@ docker run -i -t  -p 9000:9000 -v /c/projects/2017/BuildingFrameworkForCompanies
 ```
 ### For demo
 ```
-docker run -i -t  -p 9000:9000 -v /c/projects/2017/BuildingFrameworkForCompanies/slides:/home/docker/slides buildingframeworkforcompanies grunt serve
+docker run -d -t  -p 9000:9000 -v /c/projects/2017/BuildingFrameworkForCompanies/slides:/home/docker/slides buildingframeworkforcompanies
 ```

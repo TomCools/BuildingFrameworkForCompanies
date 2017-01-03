@@ -22,12 +22,5 @@ USER docker
 
 VOLUME [/home/docker/slides]
 
-
-
-RUN yo --no-insight reveal-infosupport \
-\ 
-\
-\
-
  
-#CMD grunt serve --port=$PORT
+CMD grunt serve --port=$PORT
