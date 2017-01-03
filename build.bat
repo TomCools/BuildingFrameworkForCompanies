@@ -1,1 +1,1 @@
-docker build -t buildingframeworkforcompanies .
+docker build --rm --no-cache -t buildingframeworkforcompanies .

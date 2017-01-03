@@ -1,0 +1,9 @@
+{
+  "name": "building-framework-for-companies",
+  "version": "0.0.0",
+  "dependencies": {
+    "reveal.js": "~3.3.0",
+    "highlightjs": "~9.4.0",
+    "reveal.js-theme-infosupport": "~0.0.2"
+  }
+}
