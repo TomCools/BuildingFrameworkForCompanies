@@ -1,11 +1,11 @@
 FROM node:slim
 
-ENV PORT=9000
-EXPOSE $PORT
-
 RUN useradd -ms /bin/bash docker
 
-RUN npm install -g yo generator-reveal-infosupport grunt-cli \
+RUN apt-get update \
+ && apt-get install -y -qq git
+ 
+RUN npm install -g bower yo generator-reveal-infosupport grunt-cli \
  && npm cache clear
 
 RUN mkdir /home/docker/slides \
@@ -23,4 +23,6 @@ USER docker
 VOLUME [/home/docker/slides]
 
  
-CMD grunt serve --port=$PORT
+CMD grunt serve
+
+EXPOSE $PORT
